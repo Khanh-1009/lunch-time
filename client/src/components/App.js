@@ -1,6 +1,7 @@
 import React from 'react';
 // import './App.css';
 import { Route, Routes } from 'react-router-dom'
+import { UserProvider } from '../user';
 import Header from './Header';
 import Home from './Home'
 import Us from './Us'
@@ -11,6 +12,7 @@ import Signup from './Signup'
 function App() {
   return (
     <div>
+      <UserProvider>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -18,6 +20,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
       </Routes>
+      </UserProvider>
     </div>
   );
 }

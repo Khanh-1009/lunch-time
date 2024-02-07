@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import {Link, useNavigate} from 'react-router-dom'
+import { UserContext } from "../user";
 
 function Signup() {
+    const [username, setUsername] = useState('')
+    const [email, setEmail] = useState('')
+    const [companyId, setCompanyId] = useState('')
+    const [password, setPassword] = useState('')
+    const [passwordConfirmation, setPasswordConfirmation] = useState('')
+    const [errorsList, setErrorsList] = useState([])
+    const {signup} = useContext(UserContext)
 
 
   return (
@@ -12,23 +20,34 @@ function Signup() {
         <input
           type="text"
           id="username"
-          placeholder="Username"
+          placeholder="*Username"
           value=""
           onChange=''
         />
         <br/>
         <input
           type="text"
-          id="company"
-          placeholder="Company Name"
+          id="email"
+          placeholder="*Email Address"
           value=""
           onChange=''
         />
         <br/>
+        <select name="filter">
+            <option value="">*Select Your Company</option>
+            <option value={1}>Meta Inc.</option>
+            <option value={2}>Alphabet Inc.</option>
+            <option value={3}>Amazon Inc.</option>
+            <option value={4}>Apple Inc.</option>
+            <option value={5}>Oracle Corporation</option>
+            <option value={6}>Samsung Electronics, Inc.</option>
+            <option value={7}>Tesla, Inc.</option>
+            <option value={8}>VinFast Auto Ltd.</option>
+        </select>
         <input
           type="password"
           id="password"
-          placeholder="Password"
+          placeholder="*Password"
           value=''
           onChange=''
         />
@@ -36,7 +55,7 @@ function Signup() {
         <input
           type="password"
           id="password_confirmation"
-          placeholder="Confirm Password"
+          placeholder="*Confirm Password"
           value=''
           onChange=''
         />
