@@ -166,3 +166,45 @@ header h1 {
   font-size: 1rem;
   height: 2rem;
 }
+
+/*Error Messages*/
+.error {
+  color: red;
+  background-color: mistyrose;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  width: 90%;
+  gap: 8px;
+  margin: 5;
+}
+.error span {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+}
+.error-review {
+  color: red;
+  background-color: mistyrose;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  width: 45%;
+  gap: 8px;
+  margin: 5;
+}
+.error-review span {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+}

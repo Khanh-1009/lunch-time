@@ -1,7 +1,23 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import React, { useContext } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { UserContext } from '../user';
 
 function Header() {
+    const {user, logout} = useContext(UserContext)
+    const navigate = useNavigate()
+
+    function handleLogoutClick(){
+        if (window.confirm("Do you want to log out?")) {
+            fetch('/logout', {
+                method: "DELETE",
+                headers: {'Content-Type': 'application/json'}
+            })
+            .then(() => {
+                navigate('/')
+                logout()
+            })
+        }
+    }
 
     return (
         <header>
@@ -27,7 +43,7 @@ function Header() {
                 >
                 About Us
             </NavLink>
-            <NavLink 
+            {!user || user.error ? (<NavLink 
                 to="/login" 
                 style={({isActive}) => { return {
                 color: isActive ? "white" : "rgb(20, 134, 255)",
@@ -36,7 +52,8 @@ function Header() {
                 className={({isActive}) => (isActive ? 'active' : 'link')}
                 >
                 &#128100; Login
-            </NavLink>
+            </NavLink>) : 
+            (<NavLink onClick={handleLogoutClick} color='blue'>{user.username}, Log Out</NavLink>)}
             </div>
         </header>
     )
