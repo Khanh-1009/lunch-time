@@ -7,5 +7,17 @@ function RestaurantProvider({children}){
 
     useEffect(() => {
         fetch("/restaurants")
+        .then(res => res.json())
+        .then(data => setRestaurants(data))
     }, [])
+
+    return (
+        <RestaurantContext.Provider
+            value={{restaurants, setRestaurants}}>
+                {children}
+        </RestaurantContext.Provider>
+    )
+        
 }
+
+export {RestaurantContext, RestaurantProvider}

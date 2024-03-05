@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2024_01_31_013030) do
     t.string "address"
     t.string "phone"
     t.string "image_url"
+    t.string "map_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

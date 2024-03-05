@@ -11,43 +11,50 @@ Restaurant.create([
         name: "GumaGumalu",
         address: "46531 Mission Blvd, Fremont, CA 94539",
         phone: "+1 (510) 380-8011",
-        image_url: "https://lh3.googleusercontent.com/p/AF1QipNKMwhwskf9NRIu4b2Gmf-vxD6lJ6pczdz5NURc=s1360-w1360-h1020"
+        image_url: "https://lh3.googleusercontent.com/p/AF1QipNKMwhwskf9NRIu4b2Gmf-vxD6lJ6pczdz5NURc=s1360-w1360-h1020",
+        map_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.6550482094844!2d-121.93124282370587!3d37.49246582837122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc7a739db5ae1%3A0x6c89f46461635379!2sGumaGumalu!5e0!3m2!1sen!2sus!4v1708673447753!5m2!1sen!2sus"
     },
     {
         name: "Pho Vi Hoa",
         address: "4546 El Camino Real Los Altos, CA 94022",
         phone: "+1 (650) 947-1290",
-        image_url: "https://lh3.googleusercontent.com/p/AF1QipOM8AQcL9VRQ0MtW72ceK148s0iCB5U7Ekdif5e=s680-w680-h510"
+        image_url: "https://lh3.googleusercontent.com/p/AF1QipOM8AQcL9VRQ0MtW72ceK148s0iCB5U7Ekdif5e=s680-w680-h510",
+        map_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518624983269!2d-122.117137923709!3d37.40121483358986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb09b79019973%3A0xb9f276091d8ac4e4!2zUGjhu58gVmkgSG9h!5e0!3m2!1sen!2sus!4v1708674987309!5m2!1sen!2sus"
     },
     {
         name: "Giorgio's Italian Food and Pizzeria",
         address: "1445 Foxworthy Ave. San Jose, CA 95118",
         phone: "+1 (408) 264-5781",
-        image_url: "https://popmenucloud.com/cdn-cgi/image/width%3D768%2Cheight%3D768%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/19cfa98a-4404-4d0a-bd63-48f13a5b0a87.jpg"
+        image_url: "https://popmenucloud.com/cdn-cgi/image/width%3D768%2Cheight%3D768%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/19cfa98a-4404-4d0a-bd63-48f13a5b0a87.jpg",
+        map_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.0877637264866!2d-121.89860392370797!3d37.43503143165721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcf2a00934dc1%3A0xb833306f4bec794d!2sGiorgio&#39;s%20Italian%20Food%20and%20Pizzeria!5e0!3m2!1sen!2sus!4v1708675041077!5m2!1sen!2sus"
     },
     {
         name: "Armadillo Willy's Texas BBQ",
         address: "878 Blossom Hill Rd San Jose, CA 95123",
         phone: "+1 (408) 224-7427",
-        image_url: "https://lh3.googleusercontent.com/p/AF1QipPxK8N8fEfOYbsgCRt0jNIMEH2Ixi9qhw8-x5wR=s680-w680-h510"
+        image_url: "https://lh3.googleusercontent.com/p/AF1QipPxK8N8fEfOYbsgCRt0jNIMEH2Ixi9qhw8-x5wR=s680-w680-h510",
+        map_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.0121396276663!2d-122.03115512371019!3d37.36588963560731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6653000693f%3A0x95ab42b1f7d5fc6f!2sArmadillo%20Willy&#39;s%20Texas%20BBQ!5e0!3m2!1sen!2sus!4v1708675096710!5m2!1sen!2sus"
     },
     {
         name: "The Halal Guys",
         address: "5338 Curie St Fremont, CA 94538",
         phone: "+1 (510) 493-7330",
-        image_url: "https://lh3.googleusercontent.com/p/AF1QipMpvhCYvXP-pohyNTq-93yEzuFCFaGK9RmRxoi8=s680-w680-h510-rw"
+        image_url: "https://lh3.googleusercontent.com/p/AF1QipMpvhCYvXP-pohyNTq-93yEzuFCFaGK9RmRxoi8=s680-w680-h510-rw",
+        map_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101472.2368762118!2d-122.11098078768126!3d37.36600172790366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7007000e483%3A0x900d540a75bf7af5!2sThe%20Halal%20Guys!5e0!3m2!1sen!2sus!4v1708675148200!5m2!1sen!2sus"
     },
     {
         name: "Yoshi Sushi",
         address: "599 E Calaveras Blvd Milpitas, CA 95035",
         phone: "+1 (408) 649-2888",
-        image_url: "https://lh3.googleusercontent.com/p/AF1QipOMig9Yf9aHauVm3CvROEoq5_flqxJZBUHZgeY4=s680-w680-h510"
+        image_url: "https://lh3.googleusercontent.com/p/AF1QipOMig9Yf9aHauVm3CvROEoq5_flqxJZBUHZgeY4=s680-w680-h510",
+        map_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101471.94514878873!2d-122.11098091852466!3d37.36621744048433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcf4173a823ad%3A0xa85cf12b67aea9e9!2sYoshi%20Sushi!5e0!3m2!1sen!2sus!4v1708675204674!5m2!1sen!2sus"
     },
     {
         name: "XLB Emperor - Mingle's Mango",
         address: "46529 Mission Blvd, Fremont, CA 94539",
         phone: "+1 (510) 573-6651",
-        image_url: "https://lh3.googleusercontent.com/p/AF1QipOrsr9XsTfISUAx-qY6391pRSXkkYVJH1S6Walb=s680-w680-h510"
+        image_url: "https://lh3.googleusercontent.com/p/AF1QipOrsr9XsTfISUAx-qY6391pRSXkkYVJH1S6Walb=s680-w680-h510",
+        map_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.6517113910604!2d-121.93341591151159!3d37.49254455633246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc7b6a9e8dd25%3A0x9a995ca01be36417!2sXLB%20Emperor%20-%20Mingle&#39;s%20Mango!5e0!3m2!1sen!2sus!4v1708675249396!5m2!1sen!2sus"
     }
 ])
 
@@ -137,7 +144,7 @@ Dish.create([
         name: "Fresh Spring Roll (Pork + Shrimp)",
         description: "Fresh Vietnamese spring rolls with shrimp, pork, and vegetables. Served with peanuts sauce",
         price: 11.00,
-        picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-157551000000000000/menu/items/0/item-900000000005108010_1686260636.jpg?size=medium",
+        picture_url: "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photosV2/ac6487fc-1f92-405e-a2c1-c92d76150ba8-retina-large.JPG",
         is_gluten: true,
         is_vegeterian: false,
         restaurant_id: 2
@@ -146,7 +153,7 @@ Dish.create([
         name: "Deep-fried Egg Roll",
         description: "Ground pork, shrimp, and vegetables in rice paper. Served with lime sauce",
         price: 11.00,
-        picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-157551000000000000/menu/items/6/item-900000000005108016_1686260709.jpg?size=medium",
+        picture_url: "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/7440e2fe-3e83-4276-bb09-aee6c5dbff0c-retina-large.jpg",
         is_gluten: false,
         is_vegeterian: false,
         restaurant_id: 2
@@ -155,7 +162,7 @@ Dish.create([
         name: "Lotus Root Salad w/ Tofu",
         description: "Lotus root salad with tofu (served cold)",
         price: 14.00,
-        picture_url: "https://d2s742iet3d3t1.cloudfront.net/menu_service/restaurants/847f5e6f-a1e6-4f86-ac18-11ccfd5b39fd/MenuItem/381c79a9-8c30-4c6a-a002-e3f553bac9bb.jpg?size=medium",
+        picture_url: "https://www.thesophisticatedcaveman.com/wp-content/uploads/2017/04/Vietnamese-Chicken-Salad.jpg",
         is_gluten: true,
         is_vegeterian: true,
         restaurant_id: 2
@@ -164,7 +171,7 @@ Dish.create([
         name: "Steak + Meatball (Small)",
         description: "PHO NOODLE SOUP WITH STEAK AND MEATBALLS",
         price: 16.50,
-        picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-157551000000000000/menu/items/5/item-900000000006348355_1688855067.jpg?size=medium",
+        picture_url: "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/b5134ccd-066f-47db-8416-adecb7b9813c-retina-large-jpeg",
         is_gluten: true,
         is_vegeterian: false,
         restaurant_id: 2
@@ -182,7 +189,7 @@ Dish.create([
         name: "Shrimp Fried Rice",
         description: "Shrimp fried rice",
         price: 17.50,
-        picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-157551000000000000/menu/items/6/item-900000000005107956_1687746999.jpg?size=medium",
+        picture_url: "https://img-global.cpcdn.com/recipes/f369300db7f3ffaf/680x482cq70/c%C6%A1m-chien-tom-xuc-xich-recipe-main-photo.jpg",
         is_gluten: true,
         is_vegeterian: false,
         restaurant_id: 2
@@ -299,7 +306,7 @@ Dish.create([
         name: "Beef Gyro Platter",
         description: "Served with beef gyro, rice, lettuce, and tomatoes along with your choice of toppings and our famous white and hot sauce.",
         price: 16.99,
-        picture_url: "https://thehalalguys.com/wp-content/uploads/2023/04/Beef-Platter-265x149.jpg",
+        picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024363793-QSQ1EVZKKDTHTKXEYAGO/Kafta+Kabob+Plate.JPG?format=500w",
         is_gluten: true,
         is_vegeterian: false,
         restaurant_id: 5
@@ -308,7 +315,7 @@ Dish.create([
         name: "Falafel Platter",
         description: "Served with falafels, rice, lettuce, and tomatoes along with your choice of toppings and our famous white and hot sauce.",
         price: 14.99,
-        picture_url: "https://thehalalguys.com/wp-content/uploads/2023/04/Falafel-Platter-265x149.jpg",
+        picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024362729-ZRZAZLR2HEKFXKSPA3F3/Falafel+Plate.JPG?format=500w",
         is_gluten: true,
         is_vegeterian: true,
         restaurant_id: 5
@@ -317,7 +324,7 @@ Dish.create([
         name: "Combo Platter",
         description: "Served with a pairing of your choice (beef gyro, chicken, falafel) as well as rice, lettuce, and tomatoes along with your choice of toppings and our famous white and hot sauce.",
         price: 21.99,
-        picture_url: "https://thehalalguys.com/wp-content/uploads/2023/04/Chicken-Beef-Platter-Combo-265x149.jpg",
+        picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024364444-QOK2LR1ACS3KY3MZD3PP/Lamb+Shawarma+Plate.JPG?format=500w",
         is_gluten: true,
         is_vegeterian: false,
         restaurant_id: 5
@@ -326,7 +333,7 @@ Dish.create([
         name: "Chicken Sandwich",
         description: "Warm pita bread filled with chicken. We add in lettuce, tomatoes, your choice of toppings and top it off with our famous white and hot sauce.",
         price: 12.99,
-        picture_url: "https://thehalalguys.com/wp-content/uploads/2023/04/Chicken-Sandwich-Logo-Wrap-265x149.jpg",
+        picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024362464-LQM96DSNMFAK90MCRSNE/Chicken+Sand.JPG?format=500w",
         is_gluten: false,
         is_vegeterian: false,
         restaurant_id: 5
@@ -335,7 +342,7 @@ Dish.create([
         name: "Combo Sandwich",
         description: "Warm pita bread filled with a pairing of your choice (beef gyro, chicken, falafel). We add in lettuce, tomatoes, your choice of toppings and top it off with our famous white and hot sauce.",
         price: 16.99,
-        picture_url: "https://thehalalguys.com/wp-content/uploads/2023/04/Chicken-Beef-Sandwich-Logo-Wrap-265x149.jpg",
+        picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024363776-K1Y468658GSS4SWALG5T/Lamb+Sand.JPG?format=500w",
         is_gluten: false,
         is_vegeterian: false,
         restaurant_id: 5
@@ -344,7 +351,7 @@ Dish.create([
         name: "Baklava",
         description: "Rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened and held together with syrup or honey.",
         price: 6.99,
-        picture_url: "https://thehalalguys.com/wp-content/uploads/2023/04/Baklava-265x149.jpg",
+        picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024361998-HW4ZZ82DQ0KITF1WWI6I/Baklava.JPG?format=750w",
         is_gluten: false,
         is_vegeterian: true,
         restaurant_id: 5

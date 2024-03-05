@@ -5,6 +5,7 @@ class CreateRestaurants < ActiveRecord::Migration[6.1]
       t.string :address
       t.string :phone
       t.string :image_url
+      t.string :map_url
 
       t.timestamps
     end
