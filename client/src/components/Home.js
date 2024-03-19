@@ -15,12 +15,13 @@ function Home(){
             <h1>Individual Meals, Automated for Big Teams.</h1>
             <p>Custom, individually-packaged team lunches from your favorite restaurants. The highest rated corporate catering & 
                 <br/>office lunch delivery service. Scalable to 1000s of employees</p>
-            <Link to={'/signup'}><button id="get-start">Try Your Lunch</button></Link>
+            <Link to={'/signup'}><button className="home-buttons">Try Your Lunch</button></Link>
             </div> :
             <div className="restaurant-page">
                 <div id="advertisement">
                 <h1>Help us to improve our service.<br>
                 </br>We want feedback from our trusted customers!</h1>
+                <Link to={'/feedback'} ><button className="home-buttons">Give FeedBack</button></Link>
                 </div>
             {restaurants.map((restaurant) => (
                 <RestaurantList key={restaurant.id} restaurant={restaurant}/>

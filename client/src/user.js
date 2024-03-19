@@ -25,8 +25,14 @@ function UserProvider({children}){
         setUser(newUser)
     }
 
+    function handleAddFeedback(addedFeedback) {
+        const updatedFeedbacks = [...user.feedbacks, addedFeedback]
+        const userCopy = {...user, feedbacks: updatedFeedbacks, feedbacks_count: addedFeedback.user.feedbacks_count}
+        setUser(userCopy)
+    }
+
     return (
-        <UserContext.Provider value={{user, login, logout, signup}}>
+        <UserContext.Provider value={{user, login, logout, signup, handleAddFeedback}}>
             {children}
         </UserContext.Provider>
     )

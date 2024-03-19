@@ -10,6 +10,8 @@ import Signup from './Signup'
 import { RestaurantProvider } from '../restaurants';
 import Menu from './Menu';
 import RestaurantProfile from './RestaurantProfile';
+import FeedBackForm from './FeedBackForm';
+import Profile from './Profile';
 
 
 function App() {
@@ -22,9 +24,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/restaurants/:id' element={<Menu />} />
         <Route path='/restaurant/:id' element={<RestaurantProfile />} />
-        <Route path='/about-us' element={<Us />}/>
+        <Route path='/profile' element={<Profile />}/>
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/feedback' element={<FeedBackForm/>} /> 
       </Routes>
       </RestaurantProvider>
       </UserProvider>

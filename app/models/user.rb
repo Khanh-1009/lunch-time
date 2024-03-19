@@ -4,5 +4,14 @@ class User < ApplicationRecord
     validates :username, uniqueness: true
 
     belongs_to :company
+    has_many :feedbacks
+
+    def user_company
+        company.name
+    end
+
+    def feedbacks_count
+        feedbacks.count
+    end
 end
 

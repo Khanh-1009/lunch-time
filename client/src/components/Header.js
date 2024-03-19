@@ -21,7 +21,7 @@ function Header() {
 
     return (
         <header>
-            <Link to="/" style={{textDecoration: "none"}}><h1><span>&#129386;</span><b>Happy Lunch</b></h1></Link>
+            <Link to="/" style={{textDecoration: "none"}}><h1><span>&#129386;</span><b>Yumilicious!</b></h1></Link>
             <div className='navlink'>
             <NavLink 
                 to="/" 
@@ -34,14 +34,14 @@ function Header() {
                 Home
             </NavLink>
             <NavLink 
-                to="/about-us" 
+                to="/profile" 
                 style={({isActive}) => { return {
                 color: isActive ? "white" : "rgb(20, 134, 255)",
                 background: isActive? "rgb(20, 134, 255)" : "white"
                 }}}
                 className={({isActive}) => (isActive ? 'active' : 'link')}
                 >
-                About Us
+                Profile
             </NavLink>
             {!user || user.error ? (<NavLink 
                 to="/login" 

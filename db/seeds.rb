@@ -469,7 +469,7 @@ Dish.create([
 User.create([
     {
         username: "KhanhTran",
-        email: "katetrannbkhanh@gmail.com",
+        email: "letsee@gmail.com",
         password: "user1",
         password_confirmation: "user1",
         company_id: 2

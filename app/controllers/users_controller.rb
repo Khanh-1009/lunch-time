@@ -8,9 +8,11 @@ class UsersController < ApplicationController
     def create
         user = User.create(user_params)
         if user.valid?
-            UserMailer.welcome_email(user).deliver_now
+            # UserMailer.welcome_email(user).deliver_now
             session[:user_id] = user.id 
+            UserMailer.with(user: user).welcome_message.deliver_now
             render json: user, status: :created
+
         else
             render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
         end
