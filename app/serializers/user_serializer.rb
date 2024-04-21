@@ -3,6 +3,5 @@ class UserSerializer < ActiveModel::Serializer
 
   belongs_to :company
   has_many :feedbacks
-
-
+  has_one :cart
 end

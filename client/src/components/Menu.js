@@ -17,7 +17,6 @@ function Menu(){
         }
     }, [restaurants])
 
-    console.log(currentRestaurant)
 
     return (
         <div className="menu">

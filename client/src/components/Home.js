@@ -1,12 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import {Link} from 'react-router-dom'
 import { RestaurantContext } from "../restaurants";
 import RestaurantList from "./RestaurantList";
 import { UserContext } from "../user";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchRestaurants } from "../restaurantsSlice";
 
 function Home(){
     const {user} = useContext(UserContext)
-    const {restaurants} = useContext(RestaurantContext)
+    // const {restaurants} = useContext(RestaurantContext)
+    const restaurants = useSelector((state) => state.entities) 
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchRestaurants())
+    }, [])
+   
 
     return (
         <div className="app">

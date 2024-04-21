@@ -55,6 +55,7 @@ code {
   color: whitesmoke;
   font-size: 18px;
   justify-self: center;
+  cursor: pointer;
 }
 
 #get-start:hover {
@@ -165,6 +166,13 @@ code {
   color: whitesmoke;
   font-size: 15px;
   text-align: center;
+  cursor: pointer;
+}
+.menu-card button:hover {
+  background-color: whitesmoke;
+  border: rgb(20, 134, 255) so
+  lid 1px;
+  color:rgb(20, 134, 255);
 }
 
 /*Header*/
@@ -488,3 +496,72 @@ header h1 {
   margin: 30px 40px 70px 30px;
   /* margin-left: 10px; */
 }
+
+/*Cart*/
+/*Card-Cart*/
+.cart{
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1500px;
+}
+
+.cart h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+  color: rgb(75, 75, 75);
+}
+
+#cart-item-card{
+  border: grey solid 1px;
+  border-radius: 5px;
+  /* box-shadow: 3px 4px #b2b2b2; */
+  padding: 1rem 1rem 1rem 1rem;
+  width: 50rem;
+  display: inline-flex;
+  margin: 1rem;
+  margin-left: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+}
+
+#cart-item-card img{
+  justify-self: right;
+  height: 5rem;
+  margin-right: 3rem;
+}
+
+#cart-item-card h3{
+  justify-self: left;
+  margin-right: 7rem;
+}
+
+#cart-item-card h4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#increase{
+  block-size: fit-content;
+  margin-top: 1.5rem;
+  margin-right: 2.5rem;
+  cursor: pointer;
+}
+
+#decrease{
+  block-size: fit-content;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+#delete{
+  cursor: pointer;
+}
+
+#checkout{
+  border: grey solid 1px;
+  border-radius: 5px;
+  /* box-shadow: 3px 4px #b2b2b2; */
+  padding: 0 1rem 1rem 1rem;
+  width: 20rem;
+  margin: 1rem;
+
+}
+

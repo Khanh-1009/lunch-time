@@ -469,9 +469,62 @@ Dish.create([
 User.create([
     {
         username: "KhanhTran",
-        email: "letsee@gmail.com",
+        email: "katetrannbkhanh@gmail.com",
         password: "user1",
         password_confirmation: "user1",
         company_id: 2
+    },
+    {
+        username: "babycoco",
+        email: "cutebaby@gmail.com",
+        password: "user2",
+        password_confirmation: "user2",
+        company_id: 5
+    },
+    {
+        username: "PapaXiqiao",
+        email: "papa@gmail.com",
+        password: "user3",
+        password_confirmation: "user3",
+        company_id: 3
+    }
+])
+
+Cart.create([
+    {
+        user_id: 1
+    },
+    {
+        user_id: 2
+    },
+    {
+        user_id: 3
+    }
+])
+
+Feedback.create([
+    {
+        subject: "Eating the same stuff for weeks",
+        feedback: "How many choices do I have! They claim to be an all-you-can-eat buffet, and after paying over $100 a visit for a few weeks in a row for our group to get our crab legs on, they turned us away this week and refused us service. They said we eat too many crab legs and cost them too much money. Don't go into the all-you-can-eat buffet business if you aren't comfortable with people eating all they can eat!! We didn't break any PUBLISHED rules, we were polite to everyone we saw, we paid our bill and tipped our waiters well every time but, without warning were turned away from this place for no valid reason. If I could give them 0 stars, I would. Other than the crab legs, the rest of their food is disgusting - most of it is left out for too long and crusted over. Even their soft serve ice cream has chunks of ice in it. After this experience, wouldn't go back to this place even if they would serve us!!",
+        rating: 1,
+        user_id: 1
+    },
+    {
+        subject: "I am thinking of cancelling my account",
+        feedback: "This was super disappointing to most of us, as we were really there for the chicken karaage. In addition, the employees started pouring BLEACH on the floor at 9 pm, right behind our table, so while we were trying to enjoy our food, STRONG BLEACH smells overtook our noses, therefore our tastebuds were skewed due to the strong-smelling bleach that we were smelling WHILE eating our food - spoiled the whole experience. What restaurant starts cleaning up and pours bleach on the floor while there are still tables with patrons eating? This was the very first time I've ever experienced this at ANY restaurant. While Austin and Drew did their best in serving us, I believe this falls on the management - you cannot start cleaning the restaurant while there are still patrons eating at your establishment. In addition, the Men's bathroom sink did not produce any water to wash your hands (was told by our party) and they did not have any signs letting customers know about this beforehand.",
+        rating: 1,
+        user_id: 1
+    },
+    {
+        subject: "Great Experience!",
+        feedback: "First if all, Yumilicious has great restaurant selections; we are always trying new things. More importantly, it's reliable and rarely not on time. The app is also easy to use, and our rep is super responsive. We have been using Forkable since before COVID, and I highly recommend them!",
+        rating: 5,
+        user_id: 2
+    },
+    {
+        subject: "Easy Peasy!",
+        feedback: "Setting up a personal profile for my food choices was incredibly easy. Being introduced to various restaurants has been a treat! Portion sizes have been perfect for lunch. The variety of options was a real surprise.",
+        rating: 5,
+        user_id: 3
     }
 ])

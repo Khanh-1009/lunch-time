@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { UserContext } from '../user';
+import { UserCartContext } from '../userCart';
 
 function Header() {
     const {user, logout} = useContext(UserContext)
+    const {cart} = useContext(UserCartContext)
     const navigate = useNavigate()
 
     function handleLogoutClick(){
@@ -33,7 +35,7 @@ function Header() {
                 >
                 Home
             </NavLink>
-            <NavLink 
+            {!user || user.error ? "" : (<NavLink 
                 to="/profile" 
                 style={({isActive}) => { return {
                 color: isActive ? "white" : "rgb(20, 134, 255)",
@@ -42,7 +44,16 @@ function Header() {
                 className={({isActive}) => (isActive ? 'active' : 'link')}
                 >
                 Profile
-            </NavLink>
+            </NavLink>)}
+            {!user || user.error ? "" : (<NavLink
+                to="/cart" 
+                style={({isActive}) => { return {
+                color: isActive ? "white" : "rgb(20, 134, 255)",
+                background: isActive? "rgb(20, 134, 255)" : "white"
+                }}}
+                className={({isActive}) => (isActive ? 'active' : 'link')}>
+                &#128722; ({cart === null ? "" : cart.item_counts})
+                </NavLink>)}
             {!user || user.error ? (<NavLink 
                 to="/login" 
                 style={({isActive}) => { return {

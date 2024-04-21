@@ -5,6 +5,7 @@ class User < ApplicationRecord
 
     belongs_to :company
     has_many :feedbacks
+    has_one :cart
 
     def user_company
         company.name

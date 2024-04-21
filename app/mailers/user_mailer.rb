@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
 
     def welcome_message
       @user = params[:user]
-      mail to: @user.email, subject: 'Thanks for Registering to Happy Lunch'
+      mail to: @user.email, subject: 'Thanks for Registering to Yumilicious!'
     end
 
     def feedback_response_message
