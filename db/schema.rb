@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 2024_04_04_001854) do
     t.string "picture_url"
     t.boolean "is_gluten"
     t.boolean "is_vegeterian"
+    t.boolean "is_spicy"
+    t.boolean "is_nutfree"
     t.integer "restaurant_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

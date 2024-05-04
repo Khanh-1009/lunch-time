@@ -7,6 +7,8 @@ class CreateDishes < ActiveRecord::Migration[6.1]
       t.string :picture_url
       t.boolean :is_gluten
       t.boolean :is_vegeterian
+      t.boolean :is_spicy
+      t.boolean :is_nutfree
       t.integer :restaurant_id
 
       t.timestamps

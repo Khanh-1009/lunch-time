@@ -1,5 +1,4 @@
 class CartsController < ApplicationController
-  skip_before_action :authorize
 
   def index
     carts = Cart.all
@@ -7,17 +6,11 @@ class CartsController < ApplicationController
   end
 
   def my_cart
-    @found_cart = Cart.find_by(user_id: session[:user_id])
-    render json: @found_cart
+    found_cart = Cart.find_by(user_id: session[:user_id])
+    if found_cart
+      render json: found_cart
+    else
+      render json: {error: "The user has no cart"}, status: :not_found
+    end
   end
-
-
-    # def findUserCart
-    #     @found_cart = Cart.find_by(user_id: params[:user_id])
-    #     if @found_cart
-    #       render json: @found_cart
-    #     else
-    #       render json: {error: "The user has no cart"}
-    #     end
-    # end
 end

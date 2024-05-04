@@ -5,7 +5,6 @@ import { UserProvider } from '../user';
 import { UserCartProvider } from '../userCart';
 import Header from './Header';
 import Home from './Home'
-import Us from './Us'
 import Login from './Login'
 import Signup from './Signup'
 import { RestaurantProvider } from '../restaurants';

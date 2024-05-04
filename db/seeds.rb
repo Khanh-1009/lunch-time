@@ -93,6 +93,8 @@ Dish.create([
         picture_url: "https://www.pringleapi.com/DigitalMenu/Products/276510.JPG",
         is_gluten: false,
         is_vegeterian: true,
+        is_spicy: true,
+        is_nutfree: false,
         restaurant_id: 1
     },
     {
@@ -102,6 +104,8 @@ Dish.create([
         picture_url: "https://www.pringleapi.com/DigitalMenu/Products/276514.JPG",
         is_gluten: false,
         is_vegeterian: true,
+        is_spicy: true,
+        is_nutfree: false,
         restaurant_id: 1
     },
     {
@@ -111,6 +115,8 @@ Dish.create([
         picture_url: "https://www.pringleapi.com/DigitalMenu/Products/276516.JPG",
         is_gluten: true,
         is_vegeterian: true,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 1
     },
     {
@@ -120,6 +126,8 @@ Dish.create([
         picture_url: "https://www.pringleapi.com/DigitalMenu/Products/276559.JPG",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 1
     },
     {
@@ -129,6 +137,8 @@ Dish.create([
         picture_url: "https://www.pringleapi.com/DigitalMenu/Products/276572.JPG",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 1
     },
     {
@@ -138,6 +148,8 @@ Dish.create([
         picture_url: "https://www.pringleapi.com/DigitalMenu/Products/276563.JPG",
         is_gluten: false,
         is_vegeterian: true,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 1
     },
     {
@@ -147,6 +159,8 @@ Dish.create([
         picture_url: "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photosV2/ac6487fc-1f92-405e-a2c1-c92d76150ba8-retina-large.JPG",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: false,
         restaurant_id: 2
     },
     {
@@ -156,6 +170,8 @@ Dish.create([
         picture_url: "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/7440e2fe-3e83-4276-bb09-aee6c5dbff0c-retina-large.jpg",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: false,
         restaurant_id: 2
     },
     {
@@ -165,6 +181,8 @@ Dish.create([
         picture_url: "https://www.thesophisticatedcaveman.com/wp-content/uploads/2017/04/Vietnamese-Chicken-Salad.jpg",
         is_gluten: true,
         is_vegeterian: true,
+        is_spicy: false,
+        is_nutfree: false,
         restaurant_id: 2
     },
     {
@@ -174,6 +192,8 @@ Dish.create([
         picture_url: "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/b5134ccd-066f-47db-8416-adecb7b9813c-retina-large-jpeg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 2
     },
     {
@@ -183,6 +203,8 @@ Dish.create([
         picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-157551000000000000/menu/items/2/item-900000000006351352_1688855910.jpg?size=medium",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 2
     },
     {
@@ -192,6 +214,8 @@ Dish.create([
         picture_url: "https://img-global.cpcdn.com/recipes/f369300db7f3ffaf/680x482cq70/c%C6%A1m-chien-tom-xuc-xich-recipe-main-photo.jpg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 2
     },
     {
@@ -201,6 +225,8 @@ Dish.create([
         picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/e7c87e92-539e-416f-89ae-a16f657502f5.JPG",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 3
     },
     {
@@ -210,15 +236,19 @@ Dish.create([
         picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/108d9c38-f7ee-462f-beda-44dbd1c1bbf9.jpg",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 3
     },
     {
-        name: "Penne Calabrese",
-        description: "Our family made hot and mild Italian sausage and fresh mushrooms in a light tomato cream sauce tossed with penne pasta",
-        price: 21.00,
-        picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/e7c87e92-539e-416f-89ae-a16f657502f5.JPG",
+        name: "Parmigiana Sandwich",
+        description: "Oven baked, layered with marinara sauce and mozzarella cheese. With your choice of: eggplant, meatball, sausage link, chicken breast, or veal",
+        price: 16.50,
+        picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/7cd1597d-d47f-48a8-9903-e9ba127a968f.jpg",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 3
     },
     {
@@ -228,6 +258,8 @@ Dish.create([
         picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/e30fa6e9-ef06-4aca-b55f-9ba4ff17e9c0.jpg",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 3
     },
     {
@@ -237,6 +269,8 @@ Dish.create([
         picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/5af74124-00c6-4106-9e47-cea748da997d.JPG",
         is_gluten: false,
         is_vegeterian: true,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 3
     },
     {
@@ -246,6 +280,8 @@ Dish.create([
         picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/c000f193-58e1-473f-bf2b-ff3d92240a40.jpg",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 3
     },
     {
@@ -255,6 +291,8 @@ Dish.create([
         picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-117890000000000000/menu/items/2/item-300000017488027022_1690578987.jpg?size=medium",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: false,
         restaurant_id: 4
     },
     {
@@ -264,6 +302,8 @@ Dish.create([
         picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-117890000000000000/menu/items/4/item-300000017488027014_1690581999.jpg?size=medium",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 4
     },
     {
@@ -273,6 +313,8 @@ Dish.create([
         picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-117890000000000000/menu/items/0/item-300000017488027020_1690584077.jpg?size=medium",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 4
     },
     {
@@ -282,6 +324,8 @@ Dish.create([
         picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-117890000000000000/menu/items/8/item-300000017488027038_1690581489.jpg?size=medium",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 4
     },
     {
@@ -291,6 +335,8 @@ Dish.create([
         picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-117920000000000000/menu/items/0/item-300000017488027030_1683240340.jpg?size=medium",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 4
     },
     {
@@ -300,6 +346,8 @@ Dish.create([
         picture_url: "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-117883000000000000/menu/items/5/item-300000017488027305_1683657627.jpg?size=medium",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 4
     },
     {
@@ -309,6 +357,8 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024363793-QSQ1EVZKKDTHTKXEYAGO/Kafta+Kabob+Plate.JPG?format=500w",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 5
     },
     {
@@ -318,6 +368,8 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024362729-ZRZAZLR2HEKFXKSPA3F3/Falafel+Plate.JPG?format=500w",
         is_gluten: true,
         is_vegeterian: true,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 5
     },
     {
@@ -327,6 +379,8 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024364444-QOK2LR1ACS3KY3MZD3PP/Lamb+Shawarma+Plate.JPG?format=500w",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 5
     },
     {
@@ -336,6 +390,8 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024362464-LQM96DSNMFAK90MCRSNE/Chicken+Sand.JPG?format=500w",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 5
     },
     {
@@ -345,6 +401,8 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024363776-K1Y468658GSS4SWALG5T/Lamb+Sand.JPG?format=500w",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 5
     },
     {
@@ -354,6 +412,8 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024361998-HW4ZZ82DQ0KITF1WWI6I/Baklava.JPG?format=750w",
         is_gluten: false,
         is_vegeterian: true,
+        is_spicy: false,
+        is_nutfree: false,
         restaurant_id: 5
     },
     {
@@ -363,6 +423,8 @@ Dish.create([
         picture_url: "https://api.chowbus.com/api/v2/image_proxy/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL3AwUVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--77aa9596fb7d8e6936cbae05004b82beb0f0f235/%E4%BE%BF%E5%BD%93.png",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 6
     },
     {
@@ -372,6 +434,8 @@ Dish.create([
         picture_url: "https://api.chowbus.com/api/v2/image_proxy/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNGp6T3c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--57ad94e5592a82bf024321d7f64c99234066b72a/Salmon%20Skin%20Salad.png",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: false,
         restaurant_id: 6
     },
     {
@@ -381,6 +445,8 @@ Dish.create([
         picture_url: "https://api.chowbus.com/api/v2/image_proxy/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNWVMT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--dd54e9a82375cd52c800539d063d0ddc10d0720b/dinosaur%20roll.jpg",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 6
     },
     {
@@ -390,6 +456,8 @@ Dish.create([
         picture_url: "https://api.chowbus.com/api/v2/image_proxy/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlNMT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--21c3f58536d05fd0a1c16596361ab57c95ca2328/lion%20king%20roll.jpg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 6
     },
     {
@@ -399,6 +467,8 @@ Dish.create([
         picture_url: "https://api.chowbus.com/api/v2/image_proxy/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOE9MT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6df141600c5951a7039012aa2f69f9e5cbf877e1/scorpion%20roll.jpg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 6
     },
     {
@@ -408,6 +478,8 @@ Dish.create([
         picture_url: "https://api.chowbus.com/api/v2/image_proxy/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMFoxUVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9221b7a10cbe09c9be4f84c9b9add1fd262da131/%E9%9D%A2.png",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 6
     },
     {
@@ -417,6 +489,8 @@ Dish.create([
         picture_url: "https://static.wixstatic.com/media/1a2232_3d94d7c1871c4c628c10d1d901cf42e8~mv2.jpg/v1/fill/w_740,h_646,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a2232_3d94d7c1871c4c628c10d1d901cf42e8~mv2.jpg",
         is_gluten: false,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 7
     },
     {
@@ -426,6 +500,8 @@ Dish.create([
         picture_url: "https://static.wixstatic.com/media/1a2232_df5972046d584d508d75ff3cfc58961e~mv2.jpg/v1/fill/w_740,h_1110,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a2232_df5972046d584d508d75ff3cfc58961e~mv2.jpg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: true,
+        is_nutfree: true,
         restaurant_id: 7
     },
     {
@@ -435,6 +511,8 @@ Dish.create([
         picture_url: "https://static.wixstatic.com/media/1a2232_0455dcda520046ca81ca3d0b4abea1e2~mv2.jpg/v1/fill/w_740,h_555,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a2232_0455dcda520046ca81ca3d0b4abea1e2~mv2.jpg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 7
     },
     {
@@ -444,6 +522,8 @@ Dish.create([
         picture_url: "https://static.wixstatic.com/media/1a2232_3bf8e9b1b98f4676916478644c114776~mv2.jpg/v1/fill/w_740,h_555,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a2232_3bf8e9b1b98f4676916478644c114776~mv2.jpg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 7
     },
     {
@@ -453,6 +533,8 @@ Dish.create([
         picture_url: "https://static.wixstatic.com/media/1a2232_8e7adec7b87b4338b0cb0f185fdc27eb~mv2.jpg/v1/fill/w_740,h_490,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a2232_8e7adec7b87b4338b0cb0f185fdc27eb~mv2.jpg",
         is_gluten: true,
         is_vegeterian: true,
+        is_spicy: false,
+        is_nutfree: true,
         restaurant_id: 7
     },
     {
@@ -462,6 +544,8 @@ Dish.create([
         picture_url: "https://static.wixstatic.com/media/1a2232_dcb89fdef62c427e9d632e1610f3f9d5~mv2.jpg/v1/fill/w_740,h_555,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a2232_dcb89fdef62c427e9d632e1610f3f9d5~mv2.jpg",
         is_gluten: true,
         is_vegeterian: false,
+        is_spicy: false,
+        is_nutfree: false,
         restaurant_id: 7
     }
 ])

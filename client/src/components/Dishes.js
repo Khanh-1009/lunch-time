@@ -2,8 +2,8 @@ import React, { useContext } from "react"
 import { UserCartContext } from "../userCart";
 
 function Dishes({dishes}){
-    const {name, description, price, picture_url, is_gluten, is_vegeterian, id} = dishes
-    const {addToCart} = useContext(UserCartContext)
+    const {name, description, price, picture_url, is_gluten, is_vegeterian, is_spicy, is_nutfree, id} = dishes
+    const {cart, addToCart} = useContext(UserCartContext)
 
     function handleClick() {
         fetch("/order_items", {
@@ -17,7 +17,10 @@ function Dishes({dishes}){
             })
         })
         .then(res => res.json())
-        .then(newItem => addToCart(newItem))
+        .then(newItem => {
+            alert('Item successfully added to your cart')
+            addToCart(newItem)
+        })
     }
 
     return (
@@ -30,7 +33,10 @@ function Dishes({dishes}){
             <p>${price}</p>
             {is_vegeterian ? <span>&#129388;</span> : ""} 
             {is_gluten ? <span>🌾</span> : ""}
+            {is_spicy ? <span>🌶️</span> : ""}
+            {is_nutfree ? <span>&#129372;</span> : ""}
             <br />
+            {/* {cart === null ? "" : cart.order_items.id === id ? <button>Added to Cart</button> : <button onClick={handleClick}>Place Order</button>} */}
             <button onClick={handleClick}>Place Order</button>
         </div>
 

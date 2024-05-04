@@ -6,8 +6,14 @@ class OrderItemsController < ApplicationController
         render json: order_item
     end
 
-    def delete_item
-        order_item = current_cart.order_items.find_by(dish_id: params[:dish_id])
+    def update
+        order_item = current_cart.order_items.find(params[:id])
+        order_item.update(order_item_params)
+        render json: order_item
+    end
+
+    def destroy
+        order_item = current_cart.order_items.find(params[:id])
         order_item.destroy
         render json: order_item
     end
@@ -21,12 +27,4 @@ class OrderItemsController < ApplicationController
     def order_item_params
         params.permit(:dish_id, :quantity)
     end
-    # def current_cart
-    #     @cart = Cart.find_by(id: session[cart_id])
-    #     if @cart
-    #       render json: @cart
-    #     else
-    #       render json: {errors: ["The user has no cart"]}
-    #     end
-    # end
 end

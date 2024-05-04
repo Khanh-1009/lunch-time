@@ -10,13 +10,13 @@ function Cart() {
     return(
         <div className="cart">
             <h1>Your Cart | {cart === null ? "" : cart.item_counts} items</h1>
-            {cart === null ? "" : cart.dishes.map((item) => (
+
+            {cart === null ? "" : cart.order_items.map((item) => (
                 <CartItems key={item.id} item={item} 
                 addToCart={addToCart} removeFromCart={removeFromCart}
                 handleDeleteItem={handleDeleteItem}/>
             ))} 
-            <Checkout />
-            
+            <Checkout cart={cart === null ? "" : cart}/>
         </div>
     )
 }

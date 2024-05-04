@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   get '/me', to: 'users#show'
   get '/my-cart', to: 'carts#my_cart'
-  delete '/delete-item', to: 'order_items#delete_item'
 
   resources :companies
   resources :restaurants
@@ -15,7 +14,7 @@ Rails.application.routes.draw do
   resources :users
   resources :feedbacks
   resources :carts
-  resources :order_items, only: [:create]
+  resources :order_items
 
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 end
