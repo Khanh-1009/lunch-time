@@ -1,9 +1,10 @@
-import React, { useContext } from "react"
-import { UserCartContext } from "../userCart";
+import React from "react"
+import { useDispatch } from "react-redux"
+import { addItemToCart } from "../cartSlice";
 
 function Dishes({dishes}){
     const {name, description, price, picture_url, is_gluten, is_vegeterian, is_spicy, is_nutfree, id} = dishes
-    const {cart, addToCart} = useContext(UserCartContext)
+    const dispatch = useDispatch()
 
     function handleClick() {
         fetch("/order_items", {
@@ -19,7 +20,7 @@ function Dishes({dishes}){
         .then(res => res.json())
         .then(newItem => {
             alert('Item successfully added to your cart')
-            addToCart(newItem)
+            dispatch(addItemToCart(newItem))
         })
     }
 

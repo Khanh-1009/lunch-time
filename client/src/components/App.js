@@ -1,13 +1,10 @@
 import React from 'react';
-// import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import { UserProvider } from '../user';
-import { UserCartProvider } from '../userCart';
+import { RestaurantProvider } from '../restaurants';
 import Header from './Header';
 import Home from './Home'
 import Login from './Login'
 import Signup from './Signup'
-import { RestaurantProvider } from '../restaurants';
 import Menu from './Menu';
 import RestaurantProfile from './RestaurantProfile';
 import FeedBackForm from './FeedBackForm';
@@ -18,8 +15,6 @@ import Cart from './Cart';
 function App() {
   return (
     <div>
-      <UserProvider>
-      <UserCartProvider>
       <RestaurantProvider>
       <Header />
       <Routes>
@@ -33,8 +28,6 @@ function App() {
         <Route path='/cart' element={<Cart />} />
       </Routes>
       </RestaurantProvider>
-      </UserCartProvider>
-      </UserProvider>
     </div>
   );
 }

@@ -1,17 +1,17 @@
 import React from "react"
+import { useDispatch } from "react-redux";
+import { addItemToCart, decreaseItemQty, removeItemFromCart } from "../cartSlice"
 
-
-function CartItems({item, addToCart, removeFromCart, handleDeleteItem}){
+function CartItems({item}){
     const {id, quantity, items_cost, dish} = item
+    const dispatch = useDispatch();
 
     function handleClickDeleteItem(){
         fetch(`/order_items/${id}`, {
             method: "DELETE"
         })
         .then(res => res.json())
-        .then(deletedItem => {
-            console.log(deletedItem)
-            handleDeleteItem(deletedItem)})
+        .then(deletedItem => dispatch(removeItemFromCart(deletedItem)))
     }
 
     function handleClickIncreaseQty() {
@@ -25,9 +25,7 @@ function CartItems({item, addToCart, removeFromCart, handleDeleteItem}){
             }),
         })
         .then(res => res.json())
-        .then(increaseQty => {
-            console.log(increaseQty)
-            addToCart(increaseQty)})
+        .then(increaseQty => dispatch(addItemToCart(increaseQty)))
     }
 
     function handleClickDecreaseQty() {
@@ -41,9 +39,7 @@ function CartItems({item, addToCart, removeFromCart, handleDeleteItem}){
             }),
         })
         .then(res => res.json())
-        .then(decreaseQty => {
-            console.log(decreaseQty)
-            removeFromCart(decreaseQty)})
+        .then(decreaseQty => dispatch(decreaseItemQty(decreaseQty)))
     }
 
     return (

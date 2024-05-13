@@ -1,9 +1,14 @@
-import React, { useContext } from 'react'
-import { UserContext } from '../user';
+import React, { useEffect } from 'react'
 import Feedbacks from './Feedbacks';
+import { useDispatch, useSelector } from "react-redux"
+import { fetchUser } from '../userSlice';
 
 function Profile(){
-    const {user} = useContext(UserContext)
+    const user = useSelector(state => state.user.entities)
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(fetchUser())
+    }, [])
 
     if (user) {
         return (

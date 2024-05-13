@@ -1,13 +1,14 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import {Link, useNavigate} from 'react-router-dom'
-import { UserContext } from "../user";
+import { useDispatch } from "react-redux"
+import { login } from "../userSlice";
 
 function Login() {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [errorsList, setErrorsList] = useState([])
-    const {login} = useContext(UserContext)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     function handleSubmit(e){
         e.preventDefault()
@@ -23,7 +24,7 @@ function Login() {
             if (res.ok) {
                 res.json().then((user) => {
                     console.log("success")
-                    login(user)
+                    dispatch(login(user))
                     setUsername("")
                     setPassword("")
                     alert("You have successfully logged in. Welcome back!")

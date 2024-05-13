@@ -1,12 +1,23 @@
-import React, { useContext } from 'react'
+import React, { useEffect } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { UserContext } from '../user';
-import { UserCartContext } from '../userCart';
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchCart } from '../cartSlice';
+import { fetchUser, logout } from '../userSlice';
+
 
 function Header() {
-    const {user, logout} = useContext(UserContext)
-    const {cart} = useContext(UserCartContext)
     const navigate = useNavigate()
+    const cart = useSelector((state) => state.cart.entities)
+    const user = useSelector((state) => state.user.entities)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchUser())
+    }, [dispatch])
+
+    useEffect(() => {
+        dispatch(fetchCart())
+    }, [dispatch])
 
     function handleLogoutClick(){
         if (window.confirm("Do you want to log out?")) {
@@ -16,7 +27,7 @@ function Header() {
             })
             .then(() => {
                 navigate('/')
-                logout()
+                dispatch(logout())
             })
         }
     }

@@ -1,6 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import {Link, useNavigate} from 'react-router-dom'
-import { UserContext } from "../user";
+import { useDispatch } from "react-redux"
+import { signup } from "../userSlice";
 
 function Signup() {
     const [username, setUsername] = useState('')
@@ -9,8 +10,8 @@ function Signup() {
     const [password, setPassword] = useState('')
     const [passwordConfirmation, setPasswordConfirmation] = useState('')
     const [errorsList, setErrorsList] = useState([])
-    const {signup} = useContext(UserContext)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     function handleSubmit(e){
         e.preventDefault()
@@ -29,7 +30,7 @@ function Signup() {
             if (res.ok) {
                 res.json().then((user) => {
                     console.log("success")
-                    signup(user)
+                    dispatch(signup(user))
                     setUsername("")
                     setEmail("")
                     setCompanyId("")

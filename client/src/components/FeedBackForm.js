@@ -1,12 +1,13 @@
-import React, { useContext, useState } from 'react'
-import { UserContext } from '../user'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addFeedBack } from '../userSlice'
 
 function FeedBackForm() {
     const [subject, setSubject] = useState("")
     const [feedback, setFeedback] = useState("")
     const [rating, setRating] = useState(1)
     const [errors, setErrors] = useState([])
-    const {handleAddFeedback} = useContext(UserContext)
+    const dispatch = useDispatch()
 
     function handleChangeSubject(e){
         setSubject(e.target.value)
@@ -37,7 +38,7 @@ function FeedBackForm() {
             if (res.ok){
                 res.json().then((newFeedback) => {
                     console.log(newFeedback)
-                    handleAddFeedback(newFeedback)
+                    dispatch(addFeedBack(newFeedback))
                     alert("Thanks for giving us feedback! We'll respond to you shortly.")
                     setSubject("")
                     setFeedback("")
