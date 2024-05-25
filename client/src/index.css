@@ -582,3 +582,9 @@ header h1 {
   font-weight: 500;
 }
 
+#no-item{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+  font-weight: 600;
+  font-size: large;
+  padding-left: 1rem;
+}
