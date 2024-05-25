@@ -5,7 +5,7 @@ import { addFeedBack } from '../userSlice'
 function FeedBackForm() {
     const [subject, setSubject] = useState("")
     const [feedback, setFeedback] = useState("")
-    const [rating, setRating] = useState(1)
+    const [rating, setRating] = useState(0)
     const [errors, setErrors] = useState([])
     const dispatch = useDispatch()
 
@@ -42,7 +42,7 @@ function FeedBackForm() {
                     alert("Thanks for giving us feedback! We'll respond to you shortly.")
                     setSubject("")
                     setFeedback("")
-                    setRating(1)
+                    setRating(0)
                 })
             } else {
                 res.json().then(err => {
@@ -52,7 +52,7 @@ function FeedBackForm() {
                         setErrors([])
                         setSubject("")
                         setFeedback("")
-                        setRating(1)
+                        setRating(0)
                     }, 4000)
                 }) 
             }

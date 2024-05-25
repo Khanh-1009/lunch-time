@@ -170,7 +170,7 @@ Dish.create([
         picture_url: "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/7440e2fe-3e83-4276-bb09-aee6c5dbff0c-retina-large.jpg",
         is_gluten: false,
         is_vegeterian: false,
-        is_spicy: false,
+        is_spicy: true,
         is_nutfree: false,
         restaurant_id: 2
     },
@@ -225,7 +225,7 @@ Dish.create([
         picture_url: "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/xhacnbzr/e7c87e92-539e-416f-89ae-a16f657502f5.JPG",
         is_gluten: false,
         is_vegeterian: false,
-        is_spicy: false,
+        is_spicy: true,
         is_nutfree: true,
         restaurant_id: 3
     },
@@ -390,7 +390,7 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024362464-LQM96DSNMFAK90MCRSNE/Chicken+Sand.JPG?format=500w",
         is_gluten: false,
         is_vegeterian: false,
-        is_spicy: false,
+        is_spicy: true,
         is_nutfree: true,
         restaurant_id: 5
     },
@@ -401,7 +401,7 @@ Dish.create([
         picture_url: "https://images.squarespace-cdn.com/content/v1/5f2c9e2ff1736e60bbcf5bca/1599024363776-K1Y468658GSS4SWALG5T/Lamb+Sand.JPG?format=500w",
         is_gluten: false,
         is_vegeterian: false,
-        is_spicy: false,
+        is_spicy: true,
         is_nutfree: true,
         restaurant_id: 5
     },
@@ -424,7 +424,7 @@ Dish.create([
         is_gluten: false,
         is_vegeterian: false,
         is_spicy: false,
-        is_nutfree: true,
+        is_nutfree: false,
         restaurant_id: 6
     },
     {

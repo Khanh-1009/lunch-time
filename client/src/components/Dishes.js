@@ -23,7 +23,6 @@ function Dishes({dishes}){
             dispatch(addItemToCart(newItem))
         })
     }
-
     return (
         <div className="menu-card">
             <img src={picture_url} alt={name} className="" />
@@ -35,12 +34,10 @@ function Dishes({dishes}){
             {is_vegeterian ? <span>&#129388;</span> : ""} 
             {is_gluten ? <span>🌾</span> : ""}
             {is_spicy ? <span>🌶️</span> : ""}
-            {is_nutfree ? <span>&#129372;</span> : ""}
-            <br />
-            {/* {cart === null ? "" : cart.order_items.id === id ? <button>Added to Cart</button> : <button onClick={handleClick}>Place Order</button>} */}
+            {is_nutfree ? "" : <span>&#129372;</span>}
+            <br />  
             <button onClick={handleClick}>Place Order</button>
         </div>
-
     )
 }
 

@@ -175,6 +175,13 @@ code {
   color:rgb(20, 134, 255);
 }
 
+#added-to-card{
+  background-color: rgb(235, 235, 235);
+  border: rgb(20, 134, 255) so
+  lid 1px;
+  color:rgb(20, 134, 255);
+}
+
 /*Header*/
 header {
   background: linear-gradient(to right, rgb(13, 155, 112) 20%, 45%, white 90%);;
@@ -493,7 +500,7 @@ header h1 {
 }
 
 .each-feedback p {
-  margin: 30px 40px 70px 30px;
+  margin: 30px 40px 50px 30px;
   /* margin-left: 10px; */
 }
 
